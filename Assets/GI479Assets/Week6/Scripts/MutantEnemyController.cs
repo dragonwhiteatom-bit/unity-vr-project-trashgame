@@ -77,7 +77,7 @@ public class MutantEnemyController : MonoBehaviour
     private void TryDealDamageToTarget()
     {
         //TODO: Deal damage if target in attack radius
-        if(IsTargetInAttackRadius() && Target.TryGetComponent(out EnemyHealth targetHealth))
+        if(IsTargetInAttackRadius() && Target.TryGetComponent(out Health targetHealth))
         {
             targetHealth.TakeDamage(AttackDamage);
         }
